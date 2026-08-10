@@ -20,7 +20,7 @@ export default function OrganizationSchema() {
 
         description: SITE.description,
 
-        email: "contact@My Site.com",
+        email: "contact@Image-Orbits.com",
 
         foundingDate: "2026",
 
@@ -35,8 +35,8 @@ export default function OrganizationSchema() {
         ],
 
         sameAs: [
-          "https://twitter.com/My Site",
-          "https://github.com/My Site",
+          "https://twitter.com/Image-Orbits",
+          "https://github.com/Image-Orbits",
         ],
       }}
     />

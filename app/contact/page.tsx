@@ -4,13 +4,13 @@ import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = createMetadata({
-  title: "Contact My Site",
+  title: "Contact Image-Orbits",
   description:
-    "Get in touch with the My Site team. We'd love to hear your questions, suggestions and feedback.",
+    "Get in touch with the Image-Orbits team. We'd love to hear your questions, suggestions and feedback.",
   path: "/contact",
   keywords: [
-    "Contact IMy Site",
-    "My Site Support",
+    "Contact IImage-Orbits",
+    "Image-Orbits Support",
     "Contact",
     "Support",
   ],

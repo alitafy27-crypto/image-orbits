@@ -70,7 +70,7 @@ export default function SEOFooter() {
 
       <div className="mx-auto mt-16 max-w-5xl text-center text-slate-600 leading-8">
         <p>
-          My Site is a free online platform that helps users convert,
+          Image-Orbits is a free online platform that helps users convert,
           compress, resize and optimize images without installing software.
           Every tool is designed for speed, privacy and ease of use, making
           image editing accessible on any device.

@@ -6,11 +6,11 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = createMetadata({
   title: "Terms of Service",
   description:
-    "Read the Terms of Service for using My Site online image tools.",
+    "Read the Terms of Service for using Image-Orbits online image tools.",
   path: "/terms",
   keywords: [
     "Terms of Service",
-    "My Site Terms",
+    "Image-Orbits Terms",
     "Website Terms",
   ],
 });
@@ -30,7 +30,7 @@ export default function TermsPage() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          By accessing and using My Site, you agree to the following
+          By accessing and using Image-Orbits, you agree to the following
           terms and conditions.
         </p>
 
@@ -41,7 +41,7 @@ export default function TermsPage() {
         <h2>Acceptance of Terms</h2>
 
         <p>
-          By using My Site, you agree to comply with these Terms of
+          By using Image-Orbits, you agree to comply with these Terms of
           Service and all applicable laws and regulations.
         </p>
 
@@ -69,7 +69,7 @@ export default function TermsPage() {
         <h2>Limitation of Liability</h2>
 
         <p>
-          My Site is provided "as is" without warranties of any kind. We
+          Image-Orbits is provided "as is" without warranties of any kind. We
           are not liable for any direct or indirect damages resulting from the
           use of our services.
         </p>

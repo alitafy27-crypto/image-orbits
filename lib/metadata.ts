@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const SITE = {
-  name: "My Site",
+  name: "Image-Orbits",
 
-  shortName: "My Site",
+  shortName: "Image-Orbits",
 
   url: "https://mysite.com",
 
-  title: "My Site",
+  title: "Image-Orbits",
 
   description:
     "Free online image tools to convert, compress, resize and optimize images directly in your browser. Fast, secure and privacy-friendly.",
@@ -33,7 +33,7 @@ export const SITE = {
 
   twitter: "@mysite",
 
-  author: "My Site",
+  author: "Image-Orbits",
 
   themeColor: "#2563eb",
 

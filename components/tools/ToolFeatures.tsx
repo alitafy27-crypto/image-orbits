@@ -18,7 +18,7 @@ const features = [
     icon: "🆓",
     title: "100% Free",
     description:
-      "Use all My Site tools without creating an account or paying subscription fees.",
+      "Use all Image-Orbits tools without creating an account or paying subscription fees.",
   },
   {
     icon: "🌍",
@@ -44,7 +44,7 @@ export default function ToolFeatures() {
   return (
     <Section className="bg-slate-50">
       <Heading
-        badge="Why Choose My Site?"
+        badge="Why Choose Image-Orbits?"
         title="Everything You Need for Image Conversion"
         description="Professional tools designed to make image conversion fast, secure and effortless."
       />

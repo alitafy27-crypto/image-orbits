@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "My Site",
+  name: "Image-Orbits",
 
-  shortName: "My Site",
+  shortName: "Image-Orbits",
 
   description:
     "Free online image tools to convert, compress, resize, crop, rotate and optimize PNG, JPG, WEBP and AVIF images directly in your browser. Fast, private and secure.",
@@ -14,12 +14,12 @@ export const siteConfig = {
 
   locale: "en_US",
 
-  creator: "My Site",
+  creator: "Image-Orbits",
 
   email: "support@mysite.com",
 
   keywords: [
-    "My Site",
+    "Image-Orbits",
     "Image Converter",
     "Image Tools",
     "Online Image Converter",

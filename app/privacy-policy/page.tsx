@@ -6,11 +6,11 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = createMetadata({
   title: "Privacy Policy",
   description:
-    "Read the My Site Privacy Policy to learn how we protect your privacy and handle your information.",
+    "Read the Image-Orbits Privacy Policy to learn how we protect your privacy and handle your information.",
   path: "/privacy-policy",
   keywords: [
     "Privacy Policy",
-    "My Site Privacy",
+    "Image-Orbits Privacy",
     "Data Protection",
   ],
 });
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
           Your privacy is important to us. This page explains how
-          My Site collects, uses and protects information.
+          Image-Orbits collects, uses and protects information.
         </p>
 
       </div>
@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
         <h2>Information We Collect</h2>
 
         <p>
-          My Site is designed to process images directly in your browser.
+          Image-Orbits is designed to process images directly in your browser.
           We do not intentionally collect or store your image files.
         </p>
 

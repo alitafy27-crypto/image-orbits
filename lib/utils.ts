@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function absoluteUrl(path: string) {
-  return `https://My Site.com${path}`;
+  return `https://Image-Orbits.com${path}`;
 }
 
 export function formatFileSize(bytes: number) {

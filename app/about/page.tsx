@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
-  title: "About My Site",
+  title: "About Image-Orbits",
   description:
-    "Learn more about My Site and our mission to provide fast, secure and free online image tools.",
+    "Learn more about Image-Orbits and our mission to provide fast, secure and free online image tools.",
   path: "/about",
   keywords: [
-    "About My Site",
-    "My Site",
+    "About Image-Orbits",
+    "Image-Orbits",
     "Online Image Tools",
     "Free Image Converter",
   ],
@@ -22,7 +22,7 @@ export default function AboutPage() {
       <div className="text-center">
 
         <span className="inline-flex rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
-          About My Site
+          About Image-Orbits
         </span>
 
         <h1 className="mt-6 text-5xl font-extrabold tracking-tight text-slate-900">
@@ -30,7 +30,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          My Site is an online platform designed to help anyone
+          Image-Orbits is an online platform designed to help anyone
           convert, compress, resize, crop and optimize images quickly,
           securely and completely free.
         </p>
@@ -53,7 +53,7 @@ export default function AboutPage() {
 
         <div>
           <h2 className="text-3xl font-bold text-slate-900">
-            Why My Site?
+            Why Image-Orbits?
           </h2>
 
           <ul className="mt-6 space-y-4 text-slate-600">

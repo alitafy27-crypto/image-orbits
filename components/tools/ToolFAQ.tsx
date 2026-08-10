@@ -14,7 +14,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "Is this image converter free?",
     answer:
-      "Yes. My Site provides completely free online image conversion tools without requiring registration.",
+      "Yes. Image-Orbits provides completely free online image conversion tools without requiring registration.",
   },
   {
     question: "Are my images uploaded to your servers?",
@@ -39,7 +39,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "Do your tools work on mobile devices?",
     answer:
-      "Yes. My Site works perfectly on desktop computers, tablets and smartphones using any modern browser.",
+      "Yes. Image-Orbits works perfectly on desktop computers, tablets and smartphones using any modern browser.",
   },
 ];
 
