@@ -293,10 +293,10 @@ p {
 }
 
 /* ========================================
-   🎯 التمركز الكامل لجميع الصفحات والأقسام
+   🎯 التمركز الكامل + التباعد الرأسي
    ======================================== */
 
-/* ===== تمركز جميع الحاويات الرئيسية ===== */
+/* ===== تمركز جميع الحاويات ===== */
 main,
 .page-container,
 .container-custom,
@@ -316,12 +316,14 @@ main,
   padding-right: 1.25rem !important;
 }
 
-/* ===== تمركز جميع الأقسام (sections) ===== */
+/* ===== تمركز الأقسام ===== */
 section {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
   width: 100% !important;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
 section > * {
@@ -331,107 +333,11 @@ section > * {
   padding-right: 1.25rem !important;
 }
 
-/* ===== تمركز الـ containers داخل الأقسام ===== */
-section .container,
-section .container-custom,
-section .max-w-7xl,
-section .max-w-6xl,
-section .max-w-5xl,
-section .max-w-4xl,
-section .max-w-3xl,
-section .max-w-2xl,
-section .max-w-xl,
-section .max-w-lg {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-}
-
-/* ===== تمركز الـ Grid ===== */
-.grid,
-.grid-cols-1,
-.grid-cols-2,
-.grid-cols-3,
-.grid-cols-4,
-.grid-cols-5,
-.grid-cols-6 {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* ===== تمركز الـ Cards ===== */
-.card,
-.bg-white,
-.rounded-xl,
-.shadow-sm,
-.shadow-md,
-.shadow-lg {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* ===== تمركز الهيدر ===== */
+/* ===== تمركز الهيدر والفوتر ===== */
 header .max-w-7xl,
 header .container-custom,
-header .mx-auto,
-header .container {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-}
-
-/* ===== تمركز الفوتر ===== */
 footer .max-w-7xl,
-footer .container-custom,
-footer .mx-auto,
-footer .container {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-}
-
-/* ===== تمركز الـ FAQ ===== */
-.faq-section,
-.faq-container,
-[class*="faq"] {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-}
-
-/* ===== تمركز الـ Features / Why Choose ===== */
-.features-section,
-.features-grid,
-[class*="feature"],
-[class*="why-choose"] {
-  width: 100% !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1.25rem !important;
-  padding-right: 1.25rem !important;
-}
-
-/* ===== تمركز الـ Related Tools ===== */
-.related-tools,
-.related-tools-section,
-[class*="related"] {
+footer .container-custom {
   width: 100% !important;
   max-width: 1280px !important;
   margin-left: auto !important;
@@ -441,29 +347,139 @@ footer .container {
 }
 
 /* ========================================
+   📏 تحسين التباعد الرأسي
+   ======================================== */
+
+/* ===== تباعد العناوين ===== */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+h1 {
+  margin-top: 2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+h2 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+/* ===== تباعد الفقرات ===== */
+p {
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+/* ===== تباعد القوائم ===== */
+ul, ol {
+  margin-top: 0.75rem !important;
+  margin-bottom: 1.25rem !important;
+  padding-left: 1.5rem !important;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem !important;
+}
+
+/* ===== تباعد الكاردات ===== */
+.card,
+.bg-white,
+.rounded-xl,
+.shadow-sm,
+.shadow-md {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding: 1.5rem !important;
+}
+
+/* ===== تباعد FAQ ===== */
+.faq-item,
+.faq-question {
+  margin-top: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+  padding: 1rem !important;
+}
+
+/* ===== تباعد الـ Grid ===== */
+.grid {
+  gap: 1.5rem !important;
+}
+
+/* ===== تباعد الأزرار ===== */
+button,
+.button,
+.rounded-xl.bg-blue-600 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== تباعد الـ Features ===== */
+.feature-item,
+[class*="feature"] {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding: 1.5rem !important;
+}
+
+/* ===== تباعد الـ Tools ===== */
+.tool-item,
+.related-tool {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding: 1rem !important;
+}
+
+/* ===== تباعد الـ Hero ===== */
+.hero-section {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* ===== تباعد الـ Converter ===== */
+.converter-section,
+.upload-area {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* ========================================
    📱 للشاشات الصغيرة
    ======================================== */
 
 @media (max-width: 768px) {
+  section {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  h1 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  h2 {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .card,
+  .bg-white {
+    padding: 1rem !important;
+  }
+
+  .grid {
+    gap: 1rem !important;
+  }
+
   main,
   .page-container,
   .container-custom,
   .max-w-7xl,
-  .max-w-6xl,
-  .max-w-5xl,
-  .max-w-4xl,
-  .max-w-3xl,
-  .max-w-2xl,
-  .max-w-xl,
-  .max-w-lg,
-  header .max-w-7xl,
-  footer .max-w-7xl,
   section > *,
-  section .container,
-  section .max-w-7xl,
-  .faq-section,
-  .features-section,
-  .related-tools {
+  header .max-w-7xl,
+  footer .max-w-7xl {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
