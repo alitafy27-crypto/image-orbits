@@ -1,0 +1,314 @@
+@import "tailwindcss";
+
+:root {
+  /* ==========================
+     Colors
+     ========================== */
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  --foreground: #0f172a;
+  --muted: #64748b;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --secondary: #0f172a;
+
+  --accent: #06b6d4;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --border: #e2e8f0;
+
+  /* ==========================
+     Radius
+     ========================== */
+
+  --radius-sm: 8px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* ==========================
+     Shadows
+     ========================== */
+
+  --shadow-sm:
+    0 1px 2px rgba(15, 23, 42, 0.05);
+
+  --shadow:
+    0 8px 30px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg:
+    0 20px 45px rgba(15, 23, 42, 0.12);
+
+  --shadow-xl:
+    0 30px 70px rgba(15, 23, 42, 0.16);
+
+  /* ==========================
+     Layout
+     ========================== */
+
+  --container: 1280px;
+
+  /* ==========================
+     Animation
+     ========================== */
+
+  --transition:
+    200ms ease;
+
+  --transition-slow:
+    350ms ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ===== إضافة التمركز ===== */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ===== إضافة تمركز لكل المحتوى الرئيسي ===== */
+#__next,
+main,
+.root-layout {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== تعديل container-custom ليكون متمركزاً ===== */
+.container-custom {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==========================
+   Typography
+   ========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* ==========================
+   Selection
+   ========================== */
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+/* ==========================
+   Scrollbar
+   ========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ==========================
+   Focus
+   ========================== */
+
+:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}
+
+/* ==========================
+   Utilities
+   ========================== */
+
+.container-custom {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.section-padding {
+  padding-block: 6rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow);
+}
+
+.shadow-large {
+  box-shadow: var(--shadow-lg);
+}
+
+.transition-default {
+  transition: all var(--transition);
+}
+
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--accent)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================
+   Animations
+   ========================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* ==========================
+   Responsive
+   ========================== */
+
+@media (max-width: 1024px) {
+  .section-padding {
+    padding-block: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 4rem;
+  }
+
+  .container-custom {
+    padding-inline: 1rem;
+  }
+
+  h1 {
+    line-height: 1.15;
+  }
+
+  /* ===== تحسين التمركز على الجوال ===== */
+  #__next,
+  main,
+  .root-layout {
+    padding-inline: 1rem;
+  }
+}

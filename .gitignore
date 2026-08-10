@@ -1,0 +1,8 @@
+﻿*.rar
+*.zip
+*.7z
+*.tar.gz
+node_modules/
+.next/
+package-lock.json
+image-toolkit.rar
