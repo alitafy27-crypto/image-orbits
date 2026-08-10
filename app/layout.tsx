@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
@@ -13,6 +14,8 @@ import {
 } from "@/components/seo";
 
 import { siteConfig } from "@/lib/site";
+
+const GA_MEASUREMENT_ID = "G-SFH99K0BK1";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
 
   description: siteConfig.description,
 
- keywords: [...siteConfig.keywords],
+  keywords: [...siteConfig.keywords],
 
   authors: [
     {
@@ -59,11 +62,8 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-
       "max-image-preview": "large",
-
       "max-snippet": -1,
-
       "max-video-preview": -1,
     },
   },
@@ -84,11 +84,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteConfig.ogImage,
-
         width: 1200,
-
         height: 630,
-
         alt: siteConfig.name,
       },
     ],
@@ -133,10 +130,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={siteConfig.locale.split("-")[0]}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-slate-50 font-sans text-slate-900 antialiased`}
       >
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+
         <OrganizationSchema />
 
         <WebsiteSchema />
