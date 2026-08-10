@@ -92,33 +92,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* ===== إضافة التمركز ===== */
+  /* ===== التمركز ===== */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
+}
+
+/* ===== تمركز Next.js ===== */
+#__next {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-}
-
-/* ===== إضافة تمركز لكل المحتوى الرئيسي ===== */
-#__next,
-main,
-.root-layout {
-  width: 100%;
-  max-width: var(--container);
-  margin-inline: auto;
-  padding-inline: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* ===== تعديل container-custom ليكون متمركزاً ===== */
-.container-custom {
-  width: 100%;
-  max-width: var(--container);
-  margin-inline: auto;
-  padding-inline: 1.25rem;
 }
 
 img,
@@ -304,11 +290,62 @@ p {
   h1 {
     line-height: 1.15;
   }
+}
 
-  /* ===== تحسين التمركز على الجوال ===== */
-  #__next,
+/* ========================================
+   🔥 التمركز العام لجميع الصفحات 🔥
+   ======================================== */
+
+/* ===== تمركز جميع الحاويات ===== */
+main,
+.page-container,
+.container-custom,
+.max-w-7xl,
+.max-w-6xl,
+.max-w-5xl {
+  width: 100%;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+/* ===== تمركز الهيدر ===== */
+header .max-w-7xl,
+header .container-custom,
+header .mx-auto {
+  width: 100%;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+/* ===== تمركز الفوتر ===== */
+footer .max-w-7xl,
+footer .container-custom,
+footer .mx-auto {
+  width: 100%;
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+/* ===== للشاشات الصغيرة ===== */
+@media (max-width: 768px) {
   main,
-  .root-layout {
-    padding-inline: 1rem;
+  .page-container,
+  .container-custom,
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl,
+  header .max-w-7xl,
+  footer .max-w-7xl {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
