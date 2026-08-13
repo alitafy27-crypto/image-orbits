@@ -1,60 +1,96 @@
-import type { MetadataRoute } from "next";
-
-import { tools } from "@/data/tools";
-import { siteConfig } from "@/lib/site";
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
-  const staticPages: MetadataRoute.Sitemap = [
+  return [
     {
-      url: siteConfig.url,
-      lastModified: now,
-      changeFrequency: "daily",
+      url: 'https://imageorbits.com',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: `${siteConfig.url}/tools`,
-      lastModified: now,
-      changeFrequency: "daily",
+      url: 'https://imageorbits.com/tools',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'daily',
       priority: 0.95,
     },
     {
-      url: `${siteConfig.url}/about`,
-      lastModified: now,
-      changeFrequency: "monthly",
+      url: 'https://imageorbits.com/about',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${siteConfig.url}/contact`,
-      lastModified: now,
-      changeFrequency: "monthly",
+      url: 'https://imageorbits.com/contact',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${siteConfig.url}/privacy-policy`,
-      lastModified: now,
-      changeFrequency: "yearly",
+      url: 'https://imageorbits.com/privacy-policy',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'yearly',
       priority: 0.4,
     },
     {
-      url: `${siteConfig.url}/terms`,
-      lastModified: now,
-      changeFrequency: "yearly",
+      url: 'https://imageorbits.com/terms',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'yearly',
       priority: 0.4,
     },
-  ];
-
-  const toolPages: MetadataRoute.Sitemap =
-    tools.map((tool) => ({
-      url: `${siteConfig.url}/tools/${tool.slug}`,
-      lastModified: now,
-      changeFrequency: "weekly",
+    {
+      url: 'https://imageorbits.com/tools/png-to-jpg',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
       priority: 0.9,
-    }));
-
-  return [
-    ...staticPages,
-    ...toolPages,
-  ];
+    },
+    {
+      url: 'https://imageorbits.com/tools/jpg-to-png',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/png-to-webp',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/webp-to-png',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/compress',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/resize',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/crop',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/rotate',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://imageorbits.com/tools/watermark',
+      lastModified: new Date('2026-08-10T02:26:16.740Z'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+  ]
 }
