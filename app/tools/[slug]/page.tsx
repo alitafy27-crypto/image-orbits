@@ -74,16 +74,16 @@ export default async function ToolPage({
     notFound();
   }
 
-  const pageUrl = `https://Image-Orbits.com/tools/${tool.slug}`;
+  const pageUrl = `https://ImageOrbits.com/tools/${tool.slug}`;
 
   const breadcrumb = breadcrumbSchema([
     {
       name: "Home",
-      url: "https://Image-Orbits.com",
+      url: "https://ImageOrbits.com",
     },
     {
       name: "Tools",
-      url: "https://Image-Orbits.com/tools",
+      url: "https://ImageOrbits.com/tools",
     },
     {
       name: tool.title,
@@ -107,7 +107,7 @@ export default async function ToolPage({
     {
       question: "Is this tool free?",
       answer:
-        "Yes. All Image-Orbits tools are completely free.",
+        "Yes. All ImageOrbits tools are completely free.",
     },
     {
       question: "Are my images private?",

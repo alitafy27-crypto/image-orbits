@@ -36,7 +36,7 @@ export default function SupportedFormats() {
       <Heading
         badge="Supported Formats"
         title="Work With Every Popular Image Format"
-        description="Image-Orbits supports today's most common image formats for web, design and photography."
+        description="ImageOrbits supports today's most common image formats for web, design and photography."
       />
 
       <div className="mx-auto mt-16 grid max-w-6xl gap-8 md:grid-cols-2">

@@ -3,7 +3,7 @@ import Heading from "@/components/ui/Heading";
 
 const faqs = [
   {
-    question: "Is Image-Orbits completely free?",
+    question: "Is ImageOrbits completely free?",
     answer:
       "Yes. All image tools are free to use without creating an account.",
   },
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Which image formats are supported?",
     answer:
-      "Image-Orbits supports PNG, JPG, JPEG, WEBP and AVIF, with more formats coming soon.",
+      "ImageOrbits supports PNG, JPG, JPEG, WEBP and AVIF, with more formats coming soon.",
   },
   {
     question: "Can I convert multiple images at once?",
@@ -28,7 +28,7 @@ const faqs = [
       "Image quality depends on the selected format and compression settings. We always aim to preserve the highest possible quality.",
   },
   {
-    question: "Does Image-Orbits work on mobile devices?",
+    question: "Does ImageOrbits work on mobile devices?",
     answer:
       "Yes. The website is fully responsive and works on phones, tablets and desktop computers.",
   },
@@ -40,7 +40,7 @@ export default function FAQSection() {
       <Heading
         badge="FAQ"
         title="Frequently Asked Questions"
-        description="Everything you need to know about Image-Orbits."
+        description="Everything you need to know about ImageOrbits."
       />
 
       <div className="mx-auto mt-16 max-w-4xl space-y-6">

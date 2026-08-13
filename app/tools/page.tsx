@@ -9,7 +9,7 @@ import ToolsContent from "@/components/tools/ToolsContent";
 export const metadata: Metadata = createMetadata({
   title: "Free Online Image Tools",
   description:
-    "Browse all Image-Orbits tools including image converters, compressors, resizers and editors.",
+    "Browse all ImageOrbits tools including image converters, compressors, resizers and editors.",
   path: "/tools",
   keywords: [
     "Image Tools",

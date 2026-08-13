@@ -33,7 +33,7 @@ export default function RelatedTools() {
       <Heading
         badge="More Tools"
         title="Related Image Tools"
-        description="Explore other free image converters and optimization tools available on Image-Orbits."
+        description="Explore other free image converters and optimization tools available on ImageOrbits."
       />
 
       <div className="mx-auto mt-16 grid max-w-7xl gap-8 md:grid-cols-2 lg:grid-cols-4">

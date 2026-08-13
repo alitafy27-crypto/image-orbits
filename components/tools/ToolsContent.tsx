@@ -11,7 +11,7 @@ export default function ToolsContent() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            Image-Orbits provides a complete collection of professional image
+            ImageOrbits provides a complete collection of professional image
             tools that work directly inside your browser. Whether you need to
             convert images between formats, reduce file size, resize photos,
             crop pictures or optimize images for the web, every tool is designed
@@ -21,7 +21,7 @@ export default function ToolsContent() {
 
         <div>
           <h2 className="text-3xl font-bold text-slate-900">
-            Why Choose Image-Orbits?
+            Why Choose ImageOrbits?
           </h2>
 
           <ul className="mt-6 space-y-4 text-lg leading-8 text-slate-600">
@@ -43,7 +43,7 @@ export default function ToolsContent() {
           <p className="mt-6 text-lg leading-8 text-slate-600">
             Our image tools support all modern image formats including PNG,
             JPG, JPEG, WEBP and AVIF. Whether you need maximum quality,
-            transparency or smaller file sizes, Image-Orbits provides the right
+            transparency or smaller file sizes, ImageOrbits provides the right
             converter for every situation.
           </p>
         </div>
