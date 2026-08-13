@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "Free online image tools to convert, compress, resize, crop, rotate and optimize PNG, JPG, WEBP and AVIF images directly in your browser. Fast, private and secure.",
 
-  url: "https://mysite.com",
+  url: "https://ImageOrbits.com",
 
   logo: "/images/logo.svg",
 
@@ -16,7 +16,7 @@ export const siteConfig = {
 
   creator: "ImageOrbits",
 
-  email: "support@mysite.com",
+  email: "support@ImageOrbits.com",
 
   keywords: [
     "ImageOrbits",

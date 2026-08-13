@@ -5,7 +5,7 @@ export const SITE = {
 
   shortName: "ImageOrbits",
 
-  url: "https://mysite.com",
+  url: "https://ImageOrbits.com",
 
   title: "ImageOrbits",
 
@@ -31,7 +31,7 @@ export const SITE = {
 
   type: "website",
 
-  twitter: "@mysite",
+  twitter: "@ImageOrbits",
 
   author: "ImageOrbits",
 
